@@ -4,7 +4,7 @@ export default function LoginForm() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-  function login()
+  // function login()
 
   return (
     <form action={`${BACKEND_URL}/auth/login`} method="post">
