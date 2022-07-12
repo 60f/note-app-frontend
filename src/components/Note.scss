@@ -1,0 +1,31 @@
+.Note {
+  line-height: 1.2rem;
+
+  &__text {
+    min-height: 1.2rem;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  &--deleted &__text {
+    text-decoration-color: rgba(
+      209,
+      213,
+      219,
+      calc(var(--tw-text-opacity) - 0.4)
+    ); // text-gray-300
+    text-decoration-style: solid;
+  }
+
+  &__delete-button {
+    position: relative;
+    visibility: hidden;
+    z-index: 2;
+  }
+
+  &:not(&--deleted):hover &__delete-button {
+    visibility: visible;
+  }
+}

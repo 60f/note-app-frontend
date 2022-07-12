@@ -1,0 +1,19 @@
+.NoteForm {
+  &__line {
+    cursor: pointer;
+    display: block;
+    height: 0.6rem;
+    line-height: 0;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      content: '+++';
+      height: 1rem;
+      overflow: hidden;
+      padding-top: 0.5rem;
+      position: absolute;
+      top: -0.2rem;
+    }
+  }
+}
